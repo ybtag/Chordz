@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chordz"
+version = "0.1.0"
+description = "Local MP3 to guitar chord analysis (Automatic Chord Recognition)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Chordz contributors" }]
+keywords = ["audio", "music", "chords", "guitar", "mir", "librosa"]
+dependencies = [
+    "librosa>=0.10",
+    "numpy>=1.22",
+    "scipy>=1.7",
+]
+
+[project.optional-dependencies]
+# Optional Demucs source separation (Stage 2b, --separate). MIT-licensed but
+# pulls PyTorch (large). Install CPU torch first for a lean setup:
+#   pip install torch torchaudio --index-url https://download.pytorch.org/whl/cpu
+demucs = ["demucs>=4.0"]
+# Optional audio playback for the Stage 4 GUI player (python -m chordz.player).
+gui = ["just_playback>=0.1"]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+chordz = "chordz.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["chordz*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

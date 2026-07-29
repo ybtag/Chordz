@@ -1,0 +1,69 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+
+# PyInstaller
+*.spec.bak
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Audio / large examples (do not commit copyrighted audio)
+examples/*.mp3
+examples/*.wav
+examples/*.m4a
+examples/*.flac
+examples/*.ogg
+
+# Generated outputs
+out/
+*.chordz.json
+*.chordz.txt
+
+# Install scaffolding (transient)
+install.done
+install.log
+
+# pytest / build transient
+.pytest_cache/
+*.egg-info/
+
+# Stage 2b run scaffolding (transient)
+install_ml.log
+install_ml.done
+separate_run.log
+separate_run.done
+separate_sw.log
+separate_sw.done
+run_separate.ps1
+run_separate_sw.ps1
+install_ml.ps1
+
+# Stage 4 player install scaffolding (transient)
+install_player.log
+install_player.done
+install_player.ps1
+
+# Stage 5 build artifacts (transient; build_exe.bat is kept)
+install_pyinstaller.log
+install_pyinstaller.done
+install_pyinstaller.ps1
+run_build_exe.ps1
+build_exe.log
+build_exe.done
+build/
+dist/
+*.spec

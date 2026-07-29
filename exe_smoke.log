@@ -1,0 +1,18 @@
+﻿# Chordz analysis: progression_test.wav
+Duration: 6.2s   Key: ?
+
+[00:00.00] C      (score 0.99)   [C open]
+[00:00.51] C      (score 1.00)   [C open]
+[00:01.02] C      (score 0.99)   [C open]
+[00:01.53] G      (score 0.99)   [G open]
+[00:02.04] G      (score 1.00)   [G open]
+[00:02.55] G      (score 0.99)   [G open]
+[00:03.06] Am     (score 0.98)   [Am open]
+[00:03.58] Am     (score 1.00)   [Am open]
+[00:04.09] Am     (score 1.00)   [Am open]
+[00:04.60] F      (score 0.98)   [F barre (E-shape)]
+[00:05.11] F      (score 1.00)   [F barre (E-shape)]
+[00:05.62] F      (score 1.00)   [F barre (E-shape)]
+[00:06.13] F      (score 0.89)   [F barre (E-shape)]
+
+JSON written to: examples\progression_test.chordz.json
