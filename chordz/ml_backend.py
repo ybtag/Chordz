@@ -6,10 +6,8 @@ vocabulary, Krumhansl-Schmuckler key estimation to bias diatonic chords, and
 Viterbi decoding to enforce temporal smoothness.
 
 It runs on the same librosa/numpy stack as Stage 1 (no extra dependencies),
-is fully local, and is MIT-clean (see NOTICE.md). madmom -- the originally
-documented Stage 2 backend -- is NOT used: it has no wheels and does not build
-on modern Python/numpy (last release 2018); it is dropped in favour of this
-numpy HMM plus optional Demucs separation (Stage 2b, planned).
+is fully local, and is MIT-clean (see NOTICE.md). It uses a pure-numpy HMM
+plus optional Demucs separation (Stage 2b, planned).
 """
 from __future__ import annotations
 
