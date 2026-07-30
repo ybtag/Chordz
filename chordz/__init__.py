@@ -3,4 +3,4 @@
 Stage 1: librosa chroma + beat tracking + template matching.
 """
 
-__version__ = "0.0.1"
+__version__ = "0.0.2"

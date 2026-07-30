@@ -395,8 +395,24 @@ class ChordzApp:
         self.root.mainloop()
 
 
+def _close_packaged_splash() -> None:
+    """Close PyInstaller's early splash once the real window is ready."""
+    try:
+        import pyi_splash
+    except ImportError:
+        return
+    try:
+        if pyi_splash.is_alive():
+            pyi_splash.close()
+    except (ConnectionError, OSError, RuntimeError):
+        pass
+
+
 def main(audio: str | None = None, json_path: str | None = None) -> int:
-    ChordzApp(audio_path=audio, json_path=json_path).run()
+    app = ChordzApp(audio_path=audio, json_path=json_path)
+    app.root.update_idletasks()
+    _close_packaged_splash()
+    app.run()
     return 0
 
 
