@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "chordz"
-version = "0.0.5"
+version = "0.0.6"
 description = "Local MP3 to guitar chord analysis (Automatic Chord Recognition)"
 readme = "README.md"
 requires-python = ">=3.10"
