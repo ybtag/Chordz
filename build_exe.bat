@@ -4,6 +4,8 @@ REM Produces dist\chordz.exe. All permissive licenses (ISC/BSD/MIT).
 REM For the optional heavy build (+ Demucs/torch for --separate), see README.
 .venv\Scripts\python.exe -m PyInstaller --noconfirm --clean --onefile --windowed ^
   --name chordz ^
+  --icon data\chordz.ico ^
+  --add-data "data\chordz.ico;data" ^
   --splash data\chordz_splash.png ^
   --collect-all chordz ^
   --collect-all librosa ^
